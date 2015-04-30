@@ -11,4 +11,4 @@ print(s)
 
 subprocess.call("chmod +x ./../../resetServer.sh", shell=True)
 #subprocess.call("./../../resetServer.sh", shell=True)
-subprocess.Popen("nohup ./../../resetServer.sh", shell=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+subprocess.Popen("./../../resetServer.sh", shell=True)
