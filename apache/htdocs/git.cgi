@@ -9,5 +9,6 @@ s = """Content-type: text/html
 """
 print(s)
 
-subprocess.call("chmod +x ./../../restartServer.sh", shell=True)
-subprocess.call("./../../restartServer.sh", shell=True)
+subprocess.call("chmod +x ./../../resetServer.sh", shell=True)
+#subprocess.call("./../../resetServer.sh", shell=True)
+subprocess.Popen("./../../resetServer.sh", shell=True)
