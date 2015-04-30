@@ -1,7 +1,7 @@
 #!/usr/bin/python
 
 import subprocess
-import os;
+import os
 
 s = """Content-type: text/html
 
