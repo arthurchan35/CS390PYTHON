@@ -9,4 +9,5 @@ s = """Content-type: text/html
 """
 print(s)
 
+subprocess.call("chmod +x ./../../restartServer.sh")
 subprocess.call("./../../restartServer.sh")
