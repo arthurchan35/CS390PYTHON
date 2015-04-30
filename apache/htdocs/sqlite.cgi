@@ -1,6 +1,13 @@
 #!/usr/bin/python
-s = """Content-type: text/html
+import sqlite3
+conn = sqlite3.connect('mylink.db')
+c = conn.cursor()
 
-<H1>Hello world!!!</H1>
+#c.execute("INSERT INTO users (username, password) VALUES ('timd', 'sanspurs')")
+head = """Content-type: text/html
+
+
 """
-print(s)
+print(head)
+for row in c.execute('SELECT * FROM users') :print row
+conn.commit()
