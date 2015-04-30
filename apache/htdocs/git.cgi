@@ -9,8 +9,4 @@ s = """Content-type: text/html
 """
 print(s)
 
-subprocess.call("/../../git fetch --all")
-subprocess.call("/../../git reset --hard origin/master")
-subprocess.call("/../../chmod -R +x apache")
-subprocess.call("/../../apache/bin/apachectl restart")
-
+subprocess.call("./../../restartServer.sh")
