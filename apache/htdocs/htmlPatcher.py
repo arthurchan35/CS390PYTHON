@@ -4,11 +4,20 @@ import datetime
 
 
 def patch_html(file, patches):
-    s = open(file).read()
+    return patch(open(file).read(), patches)
+
+
+def patch(text, patches):
+    if '%' not in text:
+        return text       # nothing to replace
 
     for x in patches:
-        s = s.replace(x[0], str(x[1]))
-    return s
+        m = x[0]
+        p = str(x[1])
+
+        text = text.replace(m, p)
+        patch(text, patches)
+    return text
 
 
 def default_patches():
