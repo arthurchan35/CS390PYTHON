@@ -22,8 +22,10 @@ elif commit == "Login":
 	c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND password = '"+password+"')")
 	if c.fetchone() == "None":
 		print ("Wrong Username OR Password")
+		print c.fetchone()
 	else:
 		print ("login successful")
+		print c.fetchone()
 else:
 	print("unkown input")
 conn.commit()
