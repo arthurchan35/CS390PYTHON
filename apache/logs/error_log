@@ -1,10 +1,10 @@
 [Wed Apr 29 15:01:21 2015] [notice] Apache/2.2.17 (Unix) configured -- resuming normal operations
-[Wed Apr 29 15:02:22 2015] [error] [client 72.12.205.35] File does not exist: /homes/emmons0/apache/htdocs/favicon.ico, referer: http://borg05.cs.purdue.edu:3141/
+[Wed Apr 29 15:02:22 2015] [error] [client 72.12.205.35] File does not exist: /homes/emmons0/cs390/CS390PYTHON/apache/htdocs/favicon.ico, referer: http://borg05.cs.purdue.edu:3141/
 [Wed Apr 29 15:06:41 2015] [notice] SIGHUP received.  Attempting to restart
 [Wed Apr 29 15:06:41 2015] [notice] Apache/2.2.17 (Unix) configured -- resuming normal operations
 [Wed Apr 29 15:09:52 2015] [error] [client 72.12.205.35] malformed header from script. Bad header=<H1>Hi CS390 PYTHON</H1>: test.cgi
-[Wed Apr 29 16:25:41 2015] [error] [client 128.10.15.107] File does not exist: /homes/emmons0/apache/htdocs/favicon.ico
-[Wed Apr 29 16:40:15 2015] [error] [client 128.10.25.121] File does not exist: /homes/emmons0/apache/htdocs/favicon.ico
-[Wed Apr 29 16:49:49 2015] [error] [client 128.10.25.121] File does not exist: /homes/emmons0/apache/htdocs/favicon.ico
-[Wed Apr 29 16:50:59 2015] [error] [client 128.10.25.121] File does not exist: /homes/emmons0/apache/htdocs/Mylink
-[Wed Apr 29 16:51:04 2015] [error] [client 128.10.25.121] File does not exist: /homes/emmons0/apache/htdocs/Mylink
+[Wed Apr 29 16:25:41 2015] [error] [client 128.10.15.107] File does not exist: /homes/emmons0/cs390/CS390PYTHON/apache/htdocs/favicon.ico
+[Wed Apr 29 16:40:15 2015] [error] [client 128.10.25.121] File does not exist: /homes/emmons0/cs390/CS390PYTHON/apache/htdocs/favicon.ico
+[Wed Apr 29 16:49:49 2015] [error] [client 128.10.25.121] File does not exist: /homes/emmons0/cs390/CS390PYTHON/apache/htdocs/favicon.ico
+[Wed Apr 29 16:50:59 2015] [error] [client 128.10.25.121] File does not exist: /homes/emmons0/cs390/CS390PYTHON/apache/htdocs/Mylink
+[Wed Apr 29 16:51:04 2015] [error] [client 128.10.25.121] File does not exist: /homes/emmons0/cs390/CS390PYTHON/apache/htdocs/Mylink

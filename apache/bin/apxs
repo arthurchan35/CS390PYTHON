@@ -25,7 +25,7 @@ package apxs;
 
 my %config_vars = ();
 
-my $installbuilddir = "/homes/emmons0/apache/build";
+my $installbuilddir = "/homes/emmons0/cs390/CS390PYTHON/apache/build";
 get_config_vars("$installbuilddir/config_vars.mk",\%config_vars);
 
 # read the configuration variables once

@@ -3,5 +3,5 @@
 # Created by configure
 
 "./configure" \
-"--prefix=/homes/emmons0/apache" \
+"--prefix=/homes/emmons0/cs390/CS390PYTHON/apache" \
 "$@"

@@ -41,11 +41,11 @@ ARGV="$@"
 # --------------------                              --------------------
 # 
 # the path to your httpd binary, including options if necessary
-HTTPD='/homes/emmons0/apache/bin/httpd'
+HTTPD='/homes/emmons0/cs390/CS390PYTHON/apache/bin/httpd'
 #
 # pick up any necessary environment variables
-if test -f /homes/emmons0/apache/bin/envvars; then
-  . /homes/emmons0/apache/bin/envvars
+if test -f /homes/emmons0/cs390/CS390PYTHON/apache/bin/envvars; then
+  . /homes/emmons0/cs390/CS390PYTHON/apache/bin/envvars
 fi
 #
 # a command that outputs a formatted text version of the HTML at the

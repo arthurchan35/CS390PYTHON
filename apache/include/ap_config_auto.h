@@ -192,7 +192,7 @@
 #define HAVE_UNISTD_H 1
 
 /* Root directory of the Apache install area */
-#define HTTPD_ROOT "/homes/emmons0/apache"
+#define HTTPD_ROOT "/homes/emmons0/cs390/CS390PYTHON/apache"
 
 /* Define to the address where bug reports for this package should be sent. */
 #define PACKAGE_BUGREPORT ""
