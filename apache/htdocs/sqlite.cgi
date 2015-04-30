@@ -14,6 +14,12 @@ print(head)
 
 username = form.getvalue('login')
 password = form.getvalue('password')
-c.execute("INSERT INTO users (username, password) VALUES ('"+username+"', '"+password+"')")
-for row in c.execute('SELECT * FROM users') :print row
+commit = form.getvalue('commit')
+if commit == "new_account":
+	c.execute("INSERT INTO users (username, password) VALUES ('"+username+"', '"+password+"')")
+	for row in c.execute('SELECT * FROM users') :print row
+elif commit == "login":
+	c.execute("SELECT userid FROM users WHERE flag IN ('"+username+"', '"+password+"') GROUP BY userid HAVING COUNT(*) = 2")
+else:
+	print("unkown input")
 conn.commit()
