@@ -5,8 +5,5 @@ def patch_html(file, patches):
     s = open(file).read()
 
     for x in patches:
-        s += x[0] + "--" + str(x[1])
-    
-   # for x in patches:
-   #     s.replace(x[0], str(x[1]))
+        s = s.replace(x[0], str(x[1]))
     return s
