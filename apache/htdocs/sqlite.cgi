@@ -1,6 +1,6 @@
 #!/usr/bin/python
-head = """Content-type: text/html
+s = """Content-type: text/html
 
 <H1>Hello world!!!</H1>
 """
-print(head)
+print(s)
