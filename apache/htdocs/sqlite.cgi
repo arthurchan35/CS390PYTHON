@@ -4,5 +4,9 @@ conn = sqlite3.connect('mylink.db')
 c = conn.cursor()
 
 #c.execute("INSERT INTO users (username, password) VALUES ('timd', 'sanspurs')")
-for a in c.execute('SELECT * FROM users') :print a
+head = """Content-type: text/html
+
+
+"""
+for row in c.execute('SELECT * FROM users') :print row
 conn.commit()
