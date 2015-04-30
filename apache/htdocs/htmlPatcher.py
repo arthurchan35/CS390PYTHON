@@ -8,15 +8,20 @@ def patch_html(file, patches):
 
 
 def patch(text, patches):
-    if '%' not in text:
-        return text       # nothing to replace
-
+    b = False
+    save = text
     for x in patches:
         m = x[0]
         p = str(x[1])
 
+        if '%' in p:
+            b = True
+
         text = text.replace(m, p)
+
+    if b and save != text:
         patch(text, patches)
+
     return text
 
 
