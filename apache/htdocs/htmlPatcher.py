@@ -14,6 +14,9 @@ def patch(text, patches):
         m = x[0]
         p = str(x[1])
 
+        if m[0] != '%':     # not a valid macro so just skip it
+            continue
+
         if '%' in p:
             b = True
 
