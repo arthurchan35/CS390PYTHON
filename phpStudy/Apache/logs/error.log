@@ -1,0 +1,72 @@
+[Thu May 09 11:34:44.387469 2013] [mpm_winnt:notice] [pid 9732:tid 624] AH00455: Apache/2.4.4 (Win32) PHP/5.3.24 configured -- resuming normal operations
+[Thu May 09 11:34:44.387469 2013] [mpm_winnt:notice] [pid 9732:tid 624] AH00456: Server built: Feb 23 2013 16:46:48
+[Thu May 09 11:34:44.387469 2013] [core:notice] [pid 9732:tid 624] AH00094: Command line: 'D:\\heji\\Apache\\bin\\httpd.exe -d D:/heji/Apache'
+[Thu May 09 11:34:44.387469 2013] [mpm_winnt:notice] [pid 9732:tid 624] AH00418: Parent: Created child process 8076
+[Thu May 09 11:34:44.917870 2013] [mpm_winnt:notice] [pid 8076:tid 536] AH00354: Child: Starting 250 worker threads.
+[Thu May 09 11:35:20.153686 2013] [core:warn] [pid 5164:tid 352] AH00098: pid file D:/heji/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu May 09 11:35:21.074088 2013] [mpm_winnt:notice] [pid 5164:tid 352] AH00455: Apache/2.4.4 (Win32) PHP/5.2.17 configured -- resuming normal operations
+[Thu May 09 11:35:21.074088 2013] [mpm_winnt:notice] [pid 5164:tid 352] AH00456: Server built: Feb 23 2013 16:46:48
+[Thu May 09 11:35:21.074088 2013] [core:notice] [pid 5164:tid 352] AH00094: Command line: 'D:\\heji\\Apache\\bin\\httpd.exe -d D:/heji/Apache'
+[Thu May 09 11:35:21.074088 2013] [mpm_winnt:notice] [pid 5164:tid 352] AH00418: Parent: Created child process 4464
+[Thu May 09 11:35:22.259690 2013] [mpm_winnt:notice] [pid 4464:tid 692] AH00354: Child: Starting 250 worker threads.
+[Thu May 09 11:35:49.060537 2013] [core:warn] [pid 9112:tid 352] AH00098: pid file D:/heji/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu May 09 11:35:49.091737 2013] [mpm_winnt:notice] [pid 9112:tid 352] AH00455: Apache/2.4.4 (Win32) PHP/5.3.24 configured -- resuming normal operations
+[Thu May 09 11:35:49.091737 2013] [mpm_winnt:notice] [pid 9112:tid 352] AH00456: Server built: Feb 23 2013 16:46:48
+[Thu May 09 11:35:49.091737 2013] [core:notice] [pid 9112:tid 352] AH00094: Command line: 'D:\\heji\\Apache\\bin\\httpd.exe -d D:/heji/Apache'
+[Thu May 09 11:35:49.091737 2013] [mpm_winnt:notice] [pid 9112:tid 352] AH00418: Parent: Created child process 4132
+[Thu May 09 11:35:49.622138 2013] [mpm_winnt:notice] [pid 4132:tid 536] AH00354: Child: Starting 250 worker threads.
+[Thu May 09 11:37:50.953152 2013] [core:warn] [pid 8140:tid 352] AH00098: pid file D:/heji/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu May 09 11:37:50.953152 2013] [mpm_winnt:notice] [pid 8140:tid 352] AH00455: Apache/2.4.4 (Win32) mod_fcgid/2.3.7 configured -- resuming normal operations
+[Thu May 09 11:37:50.953152 2013] [mpm_winnt:notice] [pid 8140:tid 352] AH00456: Server built: Feb 23 2013 16:46:48
+[Thu May 09 11:37:50.953152 2013] [core:notice] [pid 8140:tid 352] AH00094: Command line: 'D:\\heji\\Apache\\bin\\httpd.exe -d D:/heji/Apache'
+[Thu May 09 11:37:50.953152 2013] [mpm_winnt:notice] [pid 8140:tid 352] AH00418: Parent: Created child process 1660
+[Thu May 09 11:37:51.389952 2013] [mpm_winnt:notice] [pid 1660:tid 400] AH00354: Child: Starting 250 worker threads.
+[Thu May 09 11:42:54.546487 2013] [core:warn] [pid 6340:tid 220] AH00098: pid file D:/heji/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup:  in Unknown on line 0
+[Thu May 09 11:42:56.184090 2013] [mpm_winnt:notice] [pid 6340:tid 220] AH00455: Apache/2.4.4 (Win32) PHP/5.5.0beta4 configured -- resuming normal operations
+[Thu May 09 11:42:56.184090 2013] [mpm_winnt:notice] [pid 6340:tid 220] AH00456: Server built: Feb 23 2013 16:46:48
+[Thu May 09 11:42:56.184090 2013] [core:notice] [pid 6340:tid 220] AH00094: Command line: 'D:\\heji\\Apache\\bin\\httpd.exe -d D:/heji/Apache'
+[Thu May 09 11:42:56.199690 2013] [mpm_winnt:notice] [pid 6340:tid 220] AH00418: Parent: Created child process 7420
+PHP Warning:  PHP Startup:  in Unknown on line 0
+[Thu May 09 11:42:57.485292 2013] [mpm_winnt:notice] [pid 7420:tid 440] AH00354: Child: Starting 250 worker threads.
+[Thu May 09 12:26:52.887225 2013] [mpm_winnt:notice] [pid 6340:tid 220] AH00428: Parent: child process 7420 exited with status 1073807364 -- Restarting.
+[Thu May 09 20:40:46.542666 2013] [core:warn] [pid 7560:tid 220] AH00098: pid file D:/heji/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu May 09 20:40:47.370179 2013] [mpm_winnt:notice] [pid 7560:tid 220] AH00455: Apache/2.4.4 (Win32) PHP/5.3.24 configured -- resuming normal operations
+[Thu May 09 20:40:47.392679 2013] [mpm_winnt:notice] [pid 7560:tid 220] AH00456: Server built: Feb 23 2013 16:46:48
+[Thu May 09 20:40:47.392679 2013] [core:notice] [pid 7560:tid 220] AH00094: Command line: 'D:\\heji\\Apache\\bin\\httpd.exe -d D:/heji/Apache'
+[Thu May 09 20:40:47.425180 2013] [mpm_winnt:notice] [pid 7560:tid 220] AH00418: Parent: Created child process 6300
+[Thu May 09 20:40:48.615198 2013] [mpm_winnt:notice] [pid 6300:tid 532] AH00354: Child: Starting 250 worker threads.
+[Thu May 09 20:41:06.115967 2013] [core:warn] [pid 6388:tid 220] AH00098: pid file D:/heji/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu May 09 20:41:08.598505 2013] [mpm_winnt:notice] [pid 6388:tid 220] AH00455: Apache/2.4.4 (Win32) PHP/5.2.17 configured -- resuming normal operations
+[Thu May 09 20:41:08.598505 2013] [mpm_winnt:notice] [pid 6388:tid 220] AH00456: Server built: Feb 23 2013 16:46:48
+[Thu May 09 20:41:08.598505 2013] [core:notice] [pid 6388:tid 220] AH00094: Command line: 'D:\\heji\\Apache\\bin\\httpd.exe -d D:/heji/Apache'
+[Thu May 09 20:41:08.613505 2013] [mpm_winnt:notice] [pid 6388:tid 220] AH00418: Parent: Created child process 7136
+[Thu May 09 20:41:12.238561 2013] [mpm_winnt:notice] [pid 7136:tid 688] AH00354: Child: Starting 250 worker threads.
+[Thu May 09 20:41:42.450290 2013] [core:warn] [pid 1192:tid 220] AH00098: pid file D:/heji/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu May 09 20:41:42.462790 2013] [mpm_winnt:notice] [pid 1192:tid 220] AH00455: Apache/2.4.4 (Win32) mod_fcgid/2.3.7 configured -- resuming normal operations
+[Thu May 09 20:41:42.462790 2013] [mpm_winnt:notice] [pid 1192:tid 220] AH00456: Server built: Feb 23 2013 16:46:48
+[Thu May 09 20:41:42.462790 2013] [core:notice] [pid 1192:tid 220] AH00094: Command line: 'D:\\heji\\Apache\\bin\\httpd.exe -d D:/heji/Apache'
+[Thu May 09 20:41:42.470290 2013] [mpm_winnt:notice] [pid 1192:tid 220] AH00418: Parent: Created child process 1036
+[Thu May 09 20:41:42.922797 2013] [mpm_winnt:notice] [pid 1036:tid 396] AH00354: Child: Starting 250 worker threads.
+[Thu May 09 20:45:44.114006 2013] [core:warn] [pid 6564:tid 220] AH00098: pid file D:/heji/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Thu May 09 20:45:44.119006 2013] [mpm_winnt:notice] [pid 6564:tid 220] AH00455: Apache/2.4.4 (Win32) mod_fcgid/2.3.7 configured -- resuming normal operations
+[Thu May 09 20:45:44.119006 2013] [mpm_winnt:notice] [pid 6564:tid 220] AH00456: Server built: Feb 23 2013 16:46:48
+[Thu May 09 20:45:44.119006 2013] [core:notice] [pid 6564:tid 220] AH00094: Command line: 'D:\\heji\\Apache\\bin\\httpd.exe -d D:/heji/Apache'
+[Thu May 09 20:45:44.124006 2013] [mpm_winnt:notice] [pid 6564:tid 220] AH00418: Parent: Created child process 5384
+[Thu May 09 20:45:44.579013 2013] [mpm_winnt:notice] [pid 5384:tid 400] AH00354: Child: Starting 250 worker threads.
+[Thu May 09 20:45:55.352678 2013] [core:warn] [pid 6812:tid 220] AH00098: pid file D:/heji/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+PHP Warning:  PHP Startup:  in Unknown on line 0
+[Thu May 09 20:45:56.948704 2013] [mpm_winnt:notice] [pid 6812:tid 220] AH00455: Apache/2.4.4 (Win32) PHP/5.5.0beta4 configured -- resuming normal operations
+[Thu May 09 20:45:56.948704 2013] [mpm_winnt:notice] [pid 6812:tid 220] AH00456: Server built: Feb 23 2013 16:46:48
+[Thu May 09 20:45:56.948704 2013] [core:notice] [pid 6812:tid 220] AH00094: Command line: 'D:\\heji\\Apache\\bin\\httpd.exe -d D:/heji/Apache'
+[Thu May 09 20:45:56.961204 2013] [mpm_winnt:notice] [pid 6812:tid 220] AH00418: Parent: Created child process 6520
+PHP Warning:  PHP Startup:  in Unknown on line 0
+[Thu May 09 20:45:58.469228 2013] [mpm_winnt:notice] [pid 6520:tid 440] AH00354: Child: Starting 250 worker threads.
+Starting the Apache2a service
+The Apache2a service is running.
+ [core:warn] [pid 3332:tid 508] AH00098: pid file C:/CS390PYTHON/phpStudy/Apache/logs/httpd.pid overwritten -- Unclean shutdown of previous Apache run?
+[Wed Apr 29 19:30:59.746129 2015] [mpm_winnt:notice] [pid 3332:tid 508] AH00455: Apache/2.4.10 (Win32) OpenSSL/0.9.8zb PHP/5.3.29 configured -- resuming normal operations
+[Wed Apr 29 19:30:59.747129 2015] [mpm_winnt:notice] [pid 3332:tid 508] AH00456: Apache Lounge VC9 Server built: Jul 19 2014 13:20:51
+[Wed Apr 29 19:30:59.747129 2015] [core:notice] [pid 3332:tid 508] AH00094: Command line: 'C:\\CS390PYTHON\\phpStudy\\Apache\\bin\\httpd.exe -d C:/CS390PYTHON/phpStudy/Apache'
+[Wed Apr 29 19:30:59.747129 2015] [mpm_winnt:notice] [pid 3332:tid 508] AH00418: Parent: Created child process 3192
+[Wed Apr 29 19:31:00.676036 2015] [mpm_winnt:notice] [pid 3192:tid 388] AH00354: Child: Starting 150 worker threads.
