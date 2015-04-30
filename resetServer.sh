@@ -6,3 +6,4 @@ git reset --hard origin/master
 chmod -R +x apache/
 #apache/bin/apachectl restart
 
+echo "--update complete--"
