@@ -8,5 +8,6 @@ head = """Content-type: text/html
 
 
 """
+print(head)
 for row in c.execute('SELECT * FROM users') :print row
 conn.commit()
