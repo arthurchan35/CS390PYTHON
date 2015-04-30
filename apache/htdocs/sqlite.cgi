@@ -19,8 +19,9 @@ if commit == "New_Account":
 	c.execute("INSERT INTO users (username, password) VALUES ('"+username+"', '"+password+"')")
 	for row in c.execute('SELECT * FROM users') :print row
 elif commit == "Login":
-	c.execute("SELECT userid FROM users WHERE flag IN ('"+username+"', '"+password+"') GROUP BY userid HAVING COUNT(*) = 2")
-	print c.fetchone()
+	#c.execute("SELECT userid FROM users WHERE flag IN ('"+username+"', '"+password+"') GROUP BY userid HAVING COUNT(*) = 2")
+	#print c.fetchone()
+	print("elif")
 else:
 	print("unkown input")
 conn.commit()
