@@ -2,6 +2,7 @@
 import sqlite3
 import cgi
 import cgitb
+from emailSender import sendValidationEmail
 conn = sqlite3.connect('mylink.db')
 c = conn.cursor()
 form = cgi.FieldStorage()
@@ -17,17 +18,21 @@ password = form.getvalue('password')
 commit = form.getvalue('commit')
 print (username)
 if commit == "New_Account":
-	c.execute("INSERT INTO users (username, password) VALUES ('"+username+"', '"+password+"')")
-	for row in c.execute('SELECT * FROM users') :print row
+	key = sendValidationEmail(username, password, "create")
+	c.execute("INSERT INTO users (username, password, istemp, key) VALUES ('"+username+"', '000000', 'true', '"+key+"')")
+
 elif commit == "Login":
-	c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND password = '"+password+"')")
+	c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND password = '"+password+"' AND istemp = 'false')")
 	res = c.fetchone()
 	if res is None:
 		print ("Wrong Username OR Password")
-		print res
 	else:
 		print ("login successful")
-		print res
+
+elif commit == "Change":
+	key = sendValidationEmail(username, password, "change")
+	c.execute("UPDATE users SET (Key = '"+key+"') WHERE (username = '"+username+"')")
+
 else:
 	print("unkown input")
 conn.commit()
