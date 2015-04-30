@@ -1,8 +1,10 @@
 #!/usr/bin/python
 import sqlite3
+import cgi
+import cgitb
 conn = sqlite3.connect('mylink.db')
 c = conn.cursor()
-
+form = cgi.FieldStorage()
 #c.execute("INSERT INTO users (username, password) VALUES ('timd', 'sanspurs')")
 head = """Content-type: text/html
 
