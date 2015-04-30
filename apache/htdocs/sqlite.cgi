@@ -20,12 +20,10 @@ if commit == "New_Account":
 	for row in c.execute('SELECT * FROM users') :print row
 elif commit == "Login":
 	c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND password = '"+password+"')")
-	if c.fetchone() == "None":
+	if c.fetchone() is None:
 		print ("Wrong Username OR Password")
-		print c.fetchone()
 	else:
 		print ("login successful")
-		print c.fetchone()
 else:
 	print("unkown input")
 conn.commit()
