@@ -21,7 +21,7 @@ def genMain(circleDir):
 	file_date_tuple_list = [(x,os.path.getmtime(x)) for x in l]
 	file_date_tuple_list.sort(key=lambda x: x[1])
 	l = [x[0] for x in file_date_tuple_list]
-	m += len(l)
+	m += str(len(l))
 	i = 0
 	for y in range(0,6):
 		for x in range(0,4):
