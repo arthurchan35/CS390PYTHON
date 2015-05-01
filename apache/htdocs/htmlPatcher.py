@@ -36,12 +36,3 @@ def default_patches():
 
         ]
     return p
-
-
-def templates():
-    temps = []
-    for file in os.listdir("/templates"):
-        if file.endswith(".t"):
-            temps += [["%" + file.replace(".t", ""), open(file).read()]]
-    return temps
-

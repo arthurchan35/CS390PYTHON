@@ -1,0 +1,1 @@
+<div class="post" style="left:%x;top:%y;"> <p class="textPosttxt"> %textPost </p> </div>

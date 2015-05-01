@@ -10,7 +10,8 @@ print("Content-type: text/html\n\n")
 cookie_string = os.environ.get('HTTP_COOKIE')
 C = Cookie.SimpleCookie()
 C.load(cookie_string)
-uid = C["userid"].value
+
+uid = C["useridasdas"].value
 
 
 p  = htmlPatcher.default_patches()  # set of common patches
