@@ -24,26 +24,23 @@ if mode == "create":
 		c.execute("DELETE FROM users WHERE (username = '"+username+"')")
 		print ("Invalid key, return to login page")
 		
-	elif res == "true":
-		c.execute("UPDATE users SET (password = '"+newpassword+"', istemp = 'false', Key = NULL) WHERE (username = '"+username+"')")
+	elif res[0] == "true":
+		c.execute("UPDATE users SET password = '"+newpassword+"', istemp = 'false', Key = NULL WHERE (username = '"+username+"')")
 		print ("Accout created!")
 
-	elif res == "false":
+	elif res[0] == "false":
 		print ("database error, please contact admin")
-
+	else:
+		print ("unknown error")
 elif mode == "change":
-	c.execute("SELECT istemp FROM users WHERE (username = '"+username+"' AND key = '"+key+"')")
+	c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND istemp = 'false' AND key = '"+key+"')")
 	res = c.fetchone()
 	if res is None:
 		print("This user didn't ask for a password change")
 		
-	elif res == "true":
-		c.execute("UPDATE users SET (password = '"+newpassword+"', istemp = 'false', key = NULL) WHERE (username = '"+username+"')")
-		print ("Accout created!")
-
-	elif res == "false":
-		print ("database error, please contact admin")
-
+	else:
+		c.execute("UPDATE users SET password = '"+newpassword+"', key = NULL WHERE (username = '"+username+"')")
+		print ("Password Changed!")
 	
 else:
 	print("unknown command")

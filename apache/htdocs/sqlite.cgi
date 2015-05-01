@@ -15,17 +15,30 @@ print(head)
 username = form.getvalue('login')
 password = form.getvalue('password')
 commit = form.getvalue('commit')
-print(user)
+#username = "chen1123@purdue.edu"
+#password = "1234556"
+#commit = "New_Account"
 
 if commit == "New_Account":
-	key = sendValidationEmail(username, password, "create")
-	c.execute("INSERT INTO users (username, password, istemp, key) VALUES ('"+username+"', '000000', 'true', '"+key+"')")
+	c.execute("SELECT * FROM users WHERE (username = '"+username+"')")
+	res = c.fetchone()
+	if res is None:
+		key = sendValidationEmail(username, password, "create")
+		c.execute("INSERT INTO users (username, password, istemp, key) VALUES ('"+username+"', '"+password+"', 'true', '"+key+"')")
+		res = c.fetchone()
+	else:
+		print("username is taken, please choose anther one")
 
 elif commit == "Login":
 	c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND password = '"+password+"' AND istemp = 'false')")
 	res = c.fetchone()
 	if res is None:
-		print ("Wrong Username OR Password")
+		c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND password = '"+password+"' AND istemp = 'true')")
+		res = c.fetchone()
+		if res is None: 
+			print ("Wrong Username OR Password")
+		else:
+			print ("this account has not yet been activated")
 	else:
 		print ("login successful")
 

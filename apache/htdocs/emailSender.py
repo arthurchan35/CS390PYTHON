@@ -6,7 +6,6 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 from randomString import id_generator
 def sendValidationEmail(addr, pw, mode):
-	print("comes to email")
 	me = "support@mylink.com"
 	you = addr
 	key = id_generator()
