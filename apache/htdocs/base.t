@@ -1,16 +1,28 @@
 <!DOCTYPE html>
-<!--[if lt IE 7]> <html class="lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
-<!--[if IE 7]> <html class="lt-ie9 lt-ie8" lang="en"> <![endif]-->
-<!--[if IE 8]> <html class="lt-ie9" lang="en"> <![endif]-->
-<!--[if gt IE 8]><!--> <html lang="en"> <!--<![endif]-->
 <head>
-  <meta charset="utf-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
-  <title>%title</title>
-  <link rel="stylesheet" href="css/style.css">
-  <!--[if lt IE 9]><script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script><![endif]-->
+  <link rel="stylesheet" href="css/base.css">
 </head>
 <body>
-some text
+
+<div id="base">
+
+	<div id="top"> 
+		<div id="logo"> </div>
+		<div id="main-menu"> </div>
+	</div>
+	
+	<div id="left">  
+		<div id="user"> 
+			<div id="avatarbox"> 
+				<img id="avatar" src="%avatar">
+			</div>
+			<div id="info">  </div>
+		</div>
+	</div>
+	
+	<div id="main"> </div>
+	
+</div>
+
 </body>
 </html>

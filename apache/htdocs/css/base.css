@@ -1,0 +1,84 @@
+
+
+.color-primary-0 { color: #24626E }	
+.color-primary-1 { color: #598F99 }
+.color-primary-2 { color: #3A7682 }
+.color-primary-3 { color: #124D58 }
+.color-primary-4 { color: #04353E }
+
+
+body {
+	background-color: 	#24626E;
+	margin: 			0;
+	height: 			1500px;
+}
+
+#base {
+	background-color: 	#FFFFFF;
+	height: 			100%;
+	width: 				75%;
+	margin-left: 		auto;
+    margin-right: 		auto;
+	margin-top: 		0px;
+	margin-bottom: 		0px;
+}
+
+#top {
+	background-color: 	#598F99;
+	height: 			300px;
+	width: 				100%;
+	margin-left: 		auto;
+    margin-right: 		auto;
+
+
+}
+
+#logo {
+	background-color: 	#3A7682;
+	height: 			300px;
+	width: 				300px;
+	margin-left: 		0px;
+    margin-right: 		auto;
+}
+
+#main-menu {
+
+
+}
+
+#left {
+	background-color: 	#04353E;
+	height: 			1200px;
+	width: 				150px;
+	margin-left: 		0px;
+    margin-right: 		auto;
+
+}
+
+#user  {
+
+
+}
+
+#avatarbox {
+	background-color: 	#124D58;
+	height: 			150px;
+	width: 				150px;
+}
+
+#avatar {
+	margin-left:	 	auto;
+    margin-right: 		auto;
+	margin-top: 		auto;
+    margin-bottom: 		auto;
+}
+
+#info {
+
+
+}
+
+#main {
+
+
+}
