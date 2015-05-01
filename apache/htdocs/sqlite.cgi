@@ -45,6 +45,7 @@ elif commit == "Login":
 			print("this account has not yet been activated")
 	else:
 		print ("login successful")
+		print ("Location: http://www.google.com")
 
 elif commit == "Change":
 	print("comes here")
