@@ -23,7 +23,7 @@ def homeGen():
 	p  = htmlPatcher.default_patches()  # set of common patches
 	p += currentuser.currentUserInfo(1)	# user info
 	p += [["%userid", uid]]
-	#p += [["%posts", postGenerator.genMain("\\circles\\" + str(curr_circle) + "\\")]]
+	p += [["%posts", postGenerator.genMain("\\circles\\" + str(curr_circle) + "\\")]]
 
 
 	print(htmlPatcher.patchPage("base.t", p))
