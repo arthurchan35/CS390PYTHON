@@ -25,7 +25,7 @@ def genMain(circleDir):
 	i = 0
 	for y in range(0,6):
 		for x in range(0,4):
-			id = y*6 + x
+			id = y*4 + x
 			if id >= len(l): return m
 
 			t = l[id]
