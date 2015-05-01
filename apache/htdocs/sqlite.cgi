@@ -12,11 +12,11 @@ head = """Content-type: text/html
 
 """
 print(head)
-
 username = form.getvalue('login')
 password = form.getvalue('password')
 commit = form.getvalue('commit')
-print (username)
+print(user)
+
 if commit == "New_Account":
 	key = sendValidationEmail(username, password, "create")
 	c.execute("INSERT INTO users (username, password, istemp, key) VALUES ('"+username+"', '000000', 'true', '"+key+"')")
@@ -34,5 +34,6 @@ elif commit == "Change":
 	c.execute("UPDATE users SET (Key = '"+key+"') WHERE (username = '"+username+"')")
 
 else:
+	print("soemthing")
 	print("unkown input")
 conn.commit()
