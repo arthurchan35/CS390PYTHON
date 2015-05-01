@@ -6,11 +6,6 @@ import os
 import Cookie
 import postGenerator
 
-homeGen()
-
-
-
-
 def homeGen():
 
 	print("Content-type: text/html\n\n")
@@ -32,3 +27,5 @@ def homeGen():
 
 
 	print(htmlPatcher.patchPage("base.t", p))
+
+homeGen()
