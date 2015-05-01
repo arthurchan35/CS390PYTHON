@@ -1,0 +1,1 @@
+<div class="imgPost"> <img class="imgPostimg" src=%img> </div>

@@ -1,0 +1,1 @@
+<div class="textPost"> <p class="textPosttxt"> %textPost </p> </div>
