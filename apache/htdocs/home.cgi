@@ -14,7 +14,7 @@ p  = htmlPatcher.default_patches()  # set of common patches
 p += currentuser.currentUserInfo()	# user info
 p += [["%cookiestring", cookie_string]]
 
-C = http.cookies.SimpleCookie
+C = http.cookies.SimpleCookie()
 C.load(cookie_string)
 p += [["%userid", C["userid"]]]
 
