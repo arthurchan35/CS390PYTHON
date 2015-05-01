@@ -16,7 +16,11 @@
 			<div id="avatarbox"> 
 				<img id="avatar" src="%avatar">
 			</div>
-			<div id="info">  </div>
+			<div id="info"> 
+				<img class="menuItem" src="Images/plus.png">
+				<img class="menuItem" src="Images/circles.png">
+				<img class="menuItem" src="Images/gears.png">
+			</div>
 		</div>
 	</div>
 	
