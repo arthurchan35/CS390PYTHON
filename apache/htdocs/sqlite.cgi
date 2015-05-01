@@ -12,7 +12,7 @@ head = """Content-type: text/html
 
 """
 print(head)
-gusername = form.getvalue('login')
+username = form.getvalue('login')
 password = form.getvalue('password')
 commit = form.getvalue('commit')
 #username = "chen1123@purdue.edu"
@@ -45,6 +45,7 @@ elif commit == "Login":
 elif commit == "Change":
 	print("comes here")
 	c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND istemp = 'false')")
+	print("baba")
 	res = c.fetchone()
 	print(res)
 	if res is None:
