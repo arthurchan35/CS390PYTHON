@@ -43,9 +43,14 @@ elif commit == "Login":
 		print ("login successful")
 
 elif commit == "Change":
-	key = sendValidationEmail(username, password, "change")
-	c.execute("UPDATE users SET (Key = '"+key+"') WHERE (username = '"+username+"')")
-	print("A verification Email has been sent to your address")
+	c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND istemp = 'false')")
+	res = c.fetchone()
+	if res is None:
+		print ("No such Email account in our database or this account is not activated")
+	else:
+		key = sendValidationEmail(username, password, "change")
+		c.execute("UPDATE users SET Key = '"+key+"' WHERE (username = '"+username+"')")
+		print("A verification Email has been sent to your address")
 
 else:
 	print("soemthing")
