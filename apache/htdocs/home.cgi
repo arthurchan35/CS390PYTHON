@@ -11,10 +11,10 @@ cookie_string = os.environ.get('HTTP_COOKIE')
 C = Cookie.SimpleCookie()
 C.load(cookie_string)
 
-if "useridasdas" not in C:
+if "userid" not in C:
 	uid = 1
 else:
-	uid = C["useridasdas"].value
+	uid = C["userid"].value
 
 
 p  = htmlPatcher.default_patches()  # set of common patches
