@@ -14,15 +14,15 @@ homeGen()
 def homeGen():
 
 	print("Content-type: text/html\n\n")
-	cookie_string = os.environ.get('HTTP_COOKIE')
-	C = Cookie.SimpleCookie()
-	C.load(cookie_string)
+	#cookie_string = os.environ.get('HTTP_COOKIE')
+	#C = Cookie.SimpleCookie()
+	#C.load(cookie_string)
 
-	if "userid" not in C:
-		uid = 1
-	else:
-		uid = C["userid"].value
-
+	#if "userid" not in C:
+	#	uid = 1
+	#else:
+	#	uid = C["userid"].value
+	uid = 1
 	curr_circle = 0
 
 	p  = htmlPatcher.default_patches()  # set of common patches
