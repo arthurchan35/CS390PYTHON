@@ -1,1 +1,1 @@
-<div class="post" style="left:%x;top:%y;"> <img class="imgPostimg" src=%img> </div>
+<div class = "post" style="left:%xpx;top:%ypx;">  <img class="imgPostimg" src=%img>  </div>    

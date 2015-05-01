@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<head>
+<head> 
   <link rel="stylesheet" href="css/base.css">
 </head>
-<body>
-
+<body> 
+ 
 <div id="base">
 
 	<div id="top">
@@ -20,13 +20,14 @@
 					<img  class = "menuItem" src="Images/plus.png" />
 					<img  class = "menuItem" src="Images/circles.png" />
 					<img  class = "menuItem" src="Images/gears.png" />
+					<img  class = "menuItem" src="Images/fri.png" />
 				</div>
 			</div>
 		</div>
 	</div>
-	
+	 
 	<div id="main"> 
-		%posts           
+		%posts              
 	</div>
 	 
 </div>
