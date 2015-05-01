@@ -6,7 +6,6 @@ import os
 import Cookie
 import postGenerator
 
-userid = form.getvalue('userid')
 
 def homeGen():
 
