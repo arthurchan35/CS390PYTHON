@@ -34,7 +34,7 @@ if commit == "New_Account":
 		print("username is taken, please choose anther one")
 
 elif commit == "Login":
-	c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND password = '"+password+"' AND istemp = 'false')")
+	c.execute("SELECT userid FROM users WHERE (username = '"+username+"' AND password = '"+password+"' AND istemp = 'false')")
 	res = c.fetchone()
 	if res is None:
 		c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND password = '"+password+"' AND istemp = 'true')")
@@ -43,9 +43,12 @@ elif commit == "Login":
 			print("Wrong Username OR Password")
 		else:
 			print("this account has not yet been activated")
-	else:
-		print ("login successful")
-		print ("Location: http://www.google.com\n\n")
+	else:  
+		redir = "<head><meta http-equiv=\"refresh\" content=\"1;url=home.cgi?" 
+		uid = str(res[0]) 
+		add = "\"></head>" 
+
+		print(redir + uid + add)
 
 elif commit == "Change":
 	print("comes here")
