@@ -43,12 +43,12 @@ elif commit == "Login":
 			print("Wrong Username OR Password")
 		else:
 			print("this account has not yet been activated")
-	else:  
-		redir = "<head><meta http-equiv=\"refresh\" content=\"1;url=home.cgi?userid=" 
+	else:
 		uid = str(res[0]) 
-		add = "\"></head>" 
+		print("Set-Cookie: userid=" + uid) 
+		redir = "<head><meta http-equiv=\"refresh\" content=\"1;url=home.cgi?userid=\"></head>" 
 
-		print(redir + uid + add)
+		print(redir)
 
 elif commit == "Change":
 	print("comes here")
