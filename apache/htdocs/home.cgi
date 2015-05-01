@@ -16,7 +16,7 @@ p += [["%cookiestring", cookie_string]]
 
 C = http.cookies.SimpleCookie()
 C.load(cookie_string)
-p += [["%userid", C["userid"]]]
+p += [["%userid", C["userid"] ]]
 
 
 print(htmlPatcher.patchPage("base.t", p))
