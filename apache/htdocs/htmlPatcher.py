@@ -1,9 +1,10 @@
 #!/usr/bin/python
 
 import datetime
+import os
 
 
-def patch_html(file, patches):
+def patchPage(file, patches):
     return patch(open(file).read(), patches)
 
 
@@ -27,7 +28,6 @@ def patch(text, patches):
 
     return text
 
-
 def default_patches():
     p = [
         ["%date", datetime.datetime.now().strftime("%x")],
@@ -36,3 +36,12 @@ def default_patches():
 
         ]
     return p
+
+
+def templates():
+    temps = []
+    for file in os.listdir("/templates"):
+        if file.endswith(".t"):
+            temps += [["%" + file.replace(".t", ""), open(file).read()]]
+    return temps
+

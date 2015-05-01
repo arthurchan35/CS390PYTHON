@@ -15,9 +15,9 @@ print(head)
 username = form.getvalue('login')
 password = form.getvalue('password')
 commit = form.getvalue('commit')
-#username = "chen1123@purdue.edu"
-#password = "1234556"
-#commit = "New_Account"
+# username = "chen1123@purdue.edu"
+# password = "1234556"
+# commit = "New_Account"
 
 if commit == "New_Account":
 	c.execute("SELECT * FROM users WHERE (username = '"+username+"')")
@@ -36,9 +36,9 @@ elif commit == "Login":
 		c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND password = '"+password+"' AND istemp = 'true')")
 		res = c.fetchone()
 		if res is None: 
-			print ("Wrong Username OR Password")
+			print("Wrong Username OR Password")
 		else:
-			print ("this account has not yet been activated")
+			print("this account has not yet been activated")
 	else:
 		print ("login successful")
 
@@ -49,7 +49,7 @@ elif commit == "Change":
 	res = c.fetchone()
 	print(res)
 	if res is None:
-		print ("No such Email account in our database or this account is not activated")
+		print("No such Email account in our database or this account is not activated")
 	else:
 		key = sendValidationEmail(username, password, "change")
 		c.execute("UPDATE users SET Key = '"+key+"' WHERE (username = '"+username+"')")
