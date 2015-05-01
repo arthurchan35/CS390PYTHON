@@ -6,10 +6,10 @@
 
 
 
-def currentUserInfo():
+def currentUserInfo(userid):
 	p = [
 		["%name", "tofu"],
-		["%avatar", "Images/tofu.jpg"]
+		["%avatar", "userFiles/" + userid + "/avatar.jpg"]
 	]
 	return p
 

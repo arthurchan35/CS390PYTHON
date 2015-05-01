@@ -14,7 +14,7 @@ uid = C["userid"].value
 
 
 p  = htmlPatcher.default_patches()  # set of common patches
-p += currentuser.currentUserInfo()	# user info
+p += currentuser.currentUserInfo(1)	# user info
 p += [["%cookiestring", cookie_string], ["%userid", uid]]
 
 
