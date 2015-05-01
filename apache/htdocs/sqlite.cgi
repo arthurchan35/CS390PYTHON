@@ -43,8 +43,10 @@ elif commit == "Login":
 		print ("login successful")
 
 elif commit == "Change":
+	print("comes here")
 	c.execute("SELECT * FROM users WHERE (username = '"+username+"' AND istemp = 'false')")
 	res = c.fetchone()
+	print(res)
 	if res is None:
 		print ("No such Email account in our database or this account is not activated")
 	else:
