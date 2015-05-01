@@ -12,7 +12,7 @@ head = """Content-type: text/html
 
 """
 print(head)
-username = form.getvalue('login')
+gusername = form.getvalue('login')
 password = form.getvalue('password')
 commit = form.getvalue('commit')
 #username = "chen1123@purdue.edu"
@@ -25,7 +25,7 @@ if commit == "New_Account":
 	if res is None:
 		key = sendValidationEmail(username, password, "create")
 		c.execute("INSERT INTO users (username, password, istemp, key) VALUES ('"+username+"', '"+password+"', 'true', '"+key+"')")
-		res = c.fetchone()
+		print("A verification Email has been sent to your address")
 	else:
 		print("username is taken, please choose anther one")
 
@@ -45,6 +45,7 @@ elif commit == "Login":
 elif commit == "Change":
 	key = sendValidationEmail(username, password, "change")
 	c.execute("UPDATE users SET (Key = '"+key+"') WHERE (username = '"+username+"')")
+	print("A verification Email has been sent to your address")
 
 else:
 	print("soemthing")
