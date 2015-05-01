@@ -27,7 +27,8 @@ if commit == "New_Account":
 		c.execute("INSERT INTO users (username, password, istemp, key) VALUES ('"+username+"', '"+password+"', 'true', '"+key+"')")
 		c.execute("SELECT userid FROM users WHERE (username = '"+username+"')")
 		res = c.fetchone()
-		c.execute("INSERT INTO userid (userid) VALUES ('"+res[0]+"')")
+		temp = str(res[0])
+		c.execute("INSERT INTO userid (userid) VALUES ('"+temp+"')")
 		print("A verification Email has been sent to your address")
 	else:
 		print("username is taken, please choose anther one")
