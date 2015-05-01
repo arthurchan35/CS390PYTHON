@@ -3,7 +3,7 @@
 import htmlPatcher
 import currentuser
 import os
-import Cookies
+import Cookie
 
 print('Set-Cookie: userid=2134')
 print("Content-type: text/html\n\n")
@@ -14,7 +14,7 @@ p  = htmlPatcher.default_patches()  # set of common patches
 p += currentuser.currentUserInfo()	# user info
 p += [["%cookiestring", cookie_string]]
 
-C = cookies.SimpleCookie()
+C = Cookie.SimpleCookie()
 C.load(cookie_string)
 p += [["%userid", C["userid"] ]]
 
