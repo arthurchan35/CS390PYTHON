@@ -3,6 +3,7 @@
 import htmlPatcher
 import currentuser
 
+print('Set-Cookie: userid=2134')
 
 print("Content-type: text/html\n\n")
 
