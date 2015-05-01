@@ -28,9 +28,9 @@ if commit == "New_Account":
 		c.execute("SELECT userid FROM users WHERE (username = '"+username+"')")
 		res = c.fetchone()
 		uid = str(res[0])
-		c.execute("CREATE TABLE friendsof '"+uid+"' (friends INTEGER UNIQUE NOT NULL)")
-		c.execute("CREATE TABLE filesof '"+uid+"' (files VARCHAR (32) NOT NULL)")
-		c.execute("CREATE TABLE circlesof '"+uid+"' (circles VARCHAR (64) UNIQUE NOT NULL)")
+		c.execute("CREATE TABLE friendsof_" + uid + " (friends INTEGER UNIQUE NOT NULL)") 
+		c.execute("CREATE TABLE filesof_" + uid + " (files VARCHAR (32) NOT NULL)") 
+		c.execute("CREATE TABLE circlesof_" + uid + " (circles VARCHAR (64) UNIQUE NOT NULL)")
 		print("A verification Email has been sent to your address")
 	else:
 		print("username is taken, please choose anther one")
