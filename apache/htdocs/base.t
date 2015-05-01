@@ -6,9 +6,9 @@
 
 <div id="base">
 
-	<div id="top"> 
-		<div id="logo"> </div>
-		<div id="main-menu"> </div>
+	<div id="top">
+		<div id="logo"> %userid </div>
+		<div id="tdiv"> <img id="title" src="Images/title.png"/> </div>
 	</div>
 	
 	<div id="left">  
@@ -17,15 +17,18 @@
 				<img id="avatar" src="%avatar">
 			</div>
 			<div id="info"> 
-				<img class="menuItem" src="Images/plus.png">
-				<img class="menuItem" src="Images/circles.png">
-				<img class="menuItem" src="Images/gears.png">
+					<img  class = "menuItem" src="Images/plus.png" />
+					<img  class = "menuItem" src="Images/circles.png" />
+					<img  class = "menuItem" src="Images/gears.png" />
+				</div>
 			</div>
 		</div>
 	</div>
 	
-	<div id="main"> </div>
-	
+	<div id="main"> 
+		%posts           
+	</div>
+	 
 </div>
 
 </body>
