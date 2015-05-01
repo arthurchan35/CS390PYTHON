@@ -9,7 +9,7 @@
 def currentUserInfo():
 	p = [
 		["%name", "tofu"],
-		["%avatar", "images/tofu.jpg"]
+		["%avatar", "Images/tofu.jpg"]
 	]
 	return p
 
