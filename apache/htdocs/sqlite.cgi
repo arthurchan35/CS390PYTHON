@@ -44,7 +44,7 @@ elif commit == "Login":
 		else:
 			print("this account has not yet been activated")
 	else:  
-		redir = "<head><meta http-equiv=\"refresh\" content=\"1;url=home.cgi?" 
+		redir = "<head><meta http-equiv=\"refresh\" content=\"1;url=home.cgi?userid=" 
 		uid = str(res[0]) 
 		add = "\"></head>" 
 
